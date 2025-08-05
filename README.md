@@ -8,8 +8,8 @@ The goal of this project is to use Nmap to discover open ports on devices within
 
 ## Process Followed
 1.  The local network's IP range was identified to define the scan target.
-2.  A TCP SYN scan was executed using the command `nmap -sS -oN scan_results.txt <Your_IP_Range>` to discover hosts, find their open ports, and save the output directly to a file.
-3.  The open ports listed in the output file were researched to identify running services and analyze potential security risks.
+2.  The task guide suggested running `nmap -sS <Your_IP_Range>` to perform the scan and separately recommended saving the results. To accomplish both steps efficiently, the following single command was used to perform the scan and save the output directly to a file: `nmap -sS -oN scan_results.txt <Your_IP_Range>`.
+3.  The open ports listed in the resulting `scan_results.txt` file were researched to identify their services and analyze potential security risks.
 
 ## Scan Results and Analysis
 
@@ -29,6 +29,7 @@ Below is a summary and analysis of the open ports that were discovered on the de
 
 **Overall Security Risk Assessment:**
 The open ports `135`, `139`, and `445` strongly indicate that the scanned device is a Windows machine configured for network file sharing. On a trusted local network, this can be normal. However, these services represent a significant security risk if the device is not kept up-to-date with security patches, is not protected by a firewall, or uses weak passwords.
+
 
 ## Screenshots
 
