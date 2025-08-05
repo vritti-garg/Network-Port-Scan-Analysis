@@ -31,9 +31,11 @@ Below is a summary and analysis of the open ports that were discovered on the de
 **Overall Security Risk Assessment:**
 The open ports `135`, `139`, and `445` strongly indicate that the scanned device is a Windows machine configured for network file sharing. On a trusted local network, this can be normal. However, these services represent a significant security risk if the device is not kept up-to-date with security patches, is not protected by a firewall, or uses weak passwords.
 
-## Screenshots of a Live Scan
+## Screenshots
 
-*(This is where you will embed your screenshot images.)*
+![IP Configuration Command](ipconfig.jpg)
+![IP Configuration Command](nmap_cmd.jpg)
+
 
 ---
 
