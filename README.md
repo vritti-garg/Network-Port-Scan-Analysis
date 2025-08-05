@@ -8,9 +8,8 @@ The goal of this project is to use Nmap to discover open ports on devices within
 
 ## Process Followed
 1.  The local network's IP range was identified to define the scan target.
-2.  A TCP SYN scan was executed using the command `nmap -sS <Your_IP_Range>` to discover hosts and their open ports.
-3.  The raw scan results were saved to a text file for documentation.
-4.  The open ports were researched to identify running services and analyze potential security risks.
+2.  A TCP SYN scan was executed using the command `nmap -sS -oN scan_results.txt <Your_IP_Range>` to discover hosts, find their open ports, and save the output directly to a file.
+3.  The open ports listed in the output file were researched to identify running services and analyze potential security risks.
 
 ## Scan Results and Analysis
 
@@ -34,7 +33,7 @@ The open ports `135`, `139`, and `445` strongly indicate that the scanned device
 ## Screenshots
 
 ![IP Configuration Command](ipconfig.jpg)
-![IP Configuration Command](nmap_cmd.jpg)
+![Nmap Scan Execution](nmap_cmd.jpg)
 
 
 ---
