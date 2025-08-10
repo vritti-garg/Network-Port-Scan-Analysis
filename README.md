@@ -36,9 +36,6 @@ The open ports `135`, `139`, and `445` strongly indicate that the scanned device
 ![IP Configuration Command](ipconfig.jpg)
 ![Nmap Scan Execution](nmap_cmd.jpg)
 
-
----
-
 ## Key Concepts Encountered
 This project involves practical application of several important cybersecurity concepts:
 * The function and risks of open ports.
@@ -47,3 +44,9 @@ This project involves practical application of several important cybersecurity c
 * The role of a firewall in securing ports.
 * The definition and purpose of a port scan from an attacker's perspective.
 * Methods for securing open ports on a network.
+
+---
+## 👤 Author
+
+* **Vritti Garg**
+* [LinkedIn](https://www.linkedin.com/in/vritti-garg-682667284/)
